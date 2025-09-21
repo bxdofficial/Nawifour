@@ -13,23 +13,23 @@
     scroll-behavior: smooth;
   }
 
-  /* CSS Variables for themes */
+  /* CSS Variables for themes - محدث بالسماوي الملكي */
   .dark {
-    --toast-bg: #1E293B;
-    --toast-color: #fff;
-    --toast-border: rgba(59, 130, 246, 0.5);
-    --toast-success: #3B82F6;
-    --toast-success-bg: #fff;
-    --toast-error-bg: #fff;
+    --toast-bg: #000000;
+    --toast-color: #07ECF7;
+    --toast-border: rgba(7, 236, 247, 0.5);
+    --toast-success: #07ECF7;
+    --toast-success-bg: #000000;
+    --toast-error-bg: #000000;
   }
 
   .light {
-    --toast-bg: #ffffff;
-    --toast-color: #1f2937;
-    --toast-border: rgba(56, 189, 248, 0.5);
-    --toast-success: #38BDF8;
-    --toast-success-bg: #1f2937;
-    --toast-error-bg: #1f2937;
+    --toast-bg: #E6FDFE;
+    --toast-color: #000000;
+    --toast-border: rgba(7, 236, 247, 0.5);
+    --toast-success: #07ECF7;
+    --toast-success-bg: #000000;
+    --toast-error-bg: #000000;
   }
 
   body {
@@ -38,14 +38,14 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
-  /* Dark theme (default) */
+  /* Dark theme - وضع ليلي بالأسود والسماوي */
   .dark body {
-    @apply bg-nawi-dark text-white;
+    @apply bg-black text-royal-sky;
   }
 
-  /* Light theme */
+  /* Light theme - وضع نهاري بالسماوي الفاتح والأسود */
   .light body {
-    @apply bg-nawi-light text-gray-900;
+    @apply bg-bg-day text-black;
   }
 
   /* Custom Scrollbar */
@@ -107,21 +107,21 @@
     @apply bg-white/80 backdrop-blur-lg border border-gray-200/50 shadow-lg;
   }
 
-  /* Theme-aware glow effects */
+  /* Theme-aware glow effects - توهج سماوي ملكي */
   .glow-effect {
-    @apply shadow-[0_0_15px_rgba(59,130,246,0.2)];
+    @apply shadow-[0_0_15px_rgba(7,236,247,0.4)];
   }
 
   .light .glow-effect {
-    @apply shadow-[0_0_15px_rgba(56,189,248,0.3)];
+    @apply shadow-[0_0_15px_rgba(0,0,0,0.3)];
   }
 
   .hover-glow {
-    @apply transition-all duration-300 hover:shadow-[0_0_40px_rgba(91,33,182,0.6)] hover:scale-[1.02];
+    @apply transition-all duration-300 hover:shadow-[0_0_40px_rgba(7,236,247,0.6)] hover:scale-[1.02];
   }
 
   .light .hover-glow {
-    @apply hover:shadow-[0_0_40px_rgba(6,182,212,0.4)];
+    @apply hover:shadow-[0_0_40px_rgba(0,0,0,0.4)];
   }
 
   /* Theme-aware buttons */
@@ -156,11 +156,11 @@
   }
 
   .text-glow {
-    text-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    text-shadow: 0 0 20px rgba(7, 236, 247, 0.5);
   }
 
   .light .text-glow {
-    text-shadow: 0 0 20px rgba(56, 189, 248, 0.5);
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   }
 
   .neon-border {
@@ -176,9 +176,9 @@
     mask-composite: exclude;
   }
 
-  /* Animated Background */
+  /* Animated Background - خلفية متحركة بالسماوي الملكي */
   .animated-gradient-bg {
-    background: linear-gradient(45deg, #3B82F6, #5B21B6, #7C3AED, #3B82F6);
+    background: linear-gradient(45deg, #07ECF7, #00B8C2, #5FF4FC, #07ECF7);
     background-size: 400% 400%;
     animation: gradient-shift 15s ease infinite;
   }

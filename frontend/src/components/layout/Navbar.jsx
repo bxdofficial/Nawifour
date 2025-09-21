@@ -47,15 +47,24 @@ const Navbar = () => {
             to="/" 
             className="flex items-center space-x-2 group"
           >
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-day to-primary-night flex items-center justify-center">
-              <span className="text-white font-bold text-xl">N</span>
+            <div className="w-10 h-10 rounded-lg flex items-center justify-center overflow-hidden">
+              <img 
+                src="/nawi-logo-n.png" 
+                alt="Nawi Logo" 
+                className="w-full h-full object-contain"
+                style={{ 
+                  filter: isDarkMode ? 'brightness(1) invert(0)' : 'brightness(0) invert(1)'
+                }}
+              />
             </div>
-            <span 
-              className="text-2xl font-bold transition-colors"
-              style={{ color: themeColors.brandName }}
-            >
-              {t('brand.name', language)}
-            </span>
+            <img 
+              src="/nawi-logo-full.png" 
+              alt="Nawi - ناوي"
+              className="h-8 object-contain"
+              style={{ 
+                filter: isDarkMode ? 'brightness(1) invert(0)' : 'brightness(0) invert(1)'
+              }}
+            />
           </Link>
 
           {/* Desktop Navigation */}

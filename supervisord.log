@@ -1,0 +1,6 @@
+2025-09-21 14:53:10,222 INFO RPC interface 'supervisor' initialized
+2025-09-21 14:53:10,222 CRIT Server 'unix_http_server' running without any HTTP authentication checking
+2025-09-21 14:53:10,225 INFO daemonizing the supervisord process
+2025-09-21 14:53:10,225 INFO supervisord started with pid 5153
+2025-09-21 14:53:11,229 INFO spawned: 'nawiserver' with pid 5157
+2025-09-21 14:53:12,316 INFO success: nawiserver entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)

@@ -7,7 +7,8 @@ import { ThemeProvider } from './contexts/ThemeContext'
 // Layout Components
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
-import ParticlesBackground from './components/ui/ParticlesBackground'
+// import ParticlesBackground from './components/ui/ParticlesBackground'
+import PhotoshopToolsParticles from './components/ui/PhotoshopToolsParticles'
 
 // Pages
 import Home from './pages/Home'
@@ -25,7 +26,7 @@ function App() {
     <ThemeProvider>
       <AuthProvider>
         <div className="min-h-screen relative">
-          <ParticlesBackground />
+          <PhotoshopToolsParticles />
           <div className="relative z-10">
             <Navbar />
             <AnimatePresence mode="wait">

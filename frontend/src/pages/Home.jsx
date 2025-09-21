@@ -103,8 +103,15 @@ const Home = () => {
               className="inline-block mb-8"
             >
               <div className="relative">
-                <div className="w-40 h-40 mx-auto rounded-3xl flex items-center justify-center shadow-lg overflow-hidden relative z-10">
-                  <img src="/nawi-logo.png" alt="Nawi Logo" className="w-36 h-36 object-contain" />
+                <div className="w-40 h-40 mx-auto rounded-3xl flex items-center justify-center overflow-hidden relative z-10 bg-white/10 backdrop-blur-sm">
+                  <img 
+                    src="/nawi-logo-n.png" 
+                    alt="Nawi Logo" 
+                    className="w-32 h-32 object-contain"
+                    style={{ 
+                      filter: 'brightness(0) invert(1)'
+                    }}
+                  />
                 </div>
                 <motion.div
                   animate={{
@@ -115,7 +122,7 @@ const Home = () => {
                     duration: 3,
                     repeat: Infinity,
                   }}
-                  className="absolute inset-0 w-40 h-40 bg-gradient-to-br from-nawi-blue to-nawi-purple rounded-3xl blur-2xl -z-10"
+                  className="absolute inset-0 w-40 h-40 bg-gradient-to-br from-royal-sky to-royal-sky-dark rounded-3xl blur-2xl -z-10"
                 />
               </div>
             </motion.div>
@@ -152,7 +159,14 @@ const Home = () => {
                   }}
                   className="absolute inset-0 bg-gradient-to-r from-nawi-purple/15 via-transparent to-nawi-purple/15 rounded-2xl blur-lg transform -rotate-1"
                 />
-                <img src="/nawi-text-logo.png" alt="Nawi" className="relative z-10 h-28 md:h-40 lg:h-48 object-contain" />
+                <img 
+                  src="/nawi-logo-full.png" 
+                  alt="Nawi - ناوي" 
+                  className="relative z-10 h-20 md:h-28 lg:h-36 object-contain"
+                  style={{ 
+                    filter: 'brightness(0) invert(1)'
+                  }}
+                />
               </div>
             </motion.div>
 

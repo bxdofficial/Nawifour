@@ -8,35 +8,43 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Primary brand colors as specified
+        // Royal Sky Blue - اللون السماوي الملكي
+        'royal-sky': {
+          'DEFAULT': '#07ECF7', // اللون السماوي الأساسي
+          'light': '#5FF4FC', // سماوي فاتح
+          'dark': '#00B8C2', // سماوي غامق
+          'darker': '#008A92', // سماوي غامق جداً
+        },
+        
+        // Primary brand colors - محدث بالسماوي الملكي
         'primary': {
-          'day': '#67C7FF', // Sky-blue for day theme
-          'night': '#9FE3FF', // Lighter sky-blue for night theme
-          'dark': '#0A84FF', // Deeper blue for CTAs
+          'day': '#07ECF7', // سماوي ملكي للوضع النهاري
+          'night': '#07ECF7', // سماوي ملكي للوضع الليلي
+          'dark': '#00B8C2', // سماوي غامق للأزرار
         },
         
-        // Background colors
+        // Background colors - خلفيات محدثة
         'bg': {
-          'day': '#FFFFFF', // White for day
-          'night': '#0F1724', // Deep navy for night
-          'card-day': '#FFFFFF', // White cards
-          'card-night': '#0E1722', // Slightly lighter than night bg
-          'surface-day': '#F8FAFC', // Light surface
-          'surface-night': '#1A2332', // Dark surface
+          'day': '#E6FDFE', // سماوي فاتح جداً للنهار
+          'night': '#000000', // أسود للوضع الليلي
+          'card-day': '#F0FEFF', // كروت بسماوي فاتح
+          'card-night': '#0A0A0A', // كروت بأسود فاتح قليلاً
+          'surface-day': '#D8FCFD', // أسطح بسماوي فاتح
+          'surface-night': '#111111', // أسطح بأسود
         },
         
-        // Text colors
+        // Text colors - ألوان النصوص
         'text': {
-          'day': '#0B0B0B', // Black for day
-          'night': '#E6F7FF', // Soft light for night
-          'secondary-day': '#4B5563', // Gray for day
-          'secondary-night': '#94A3B8', // Light gray for night
+          'day': '#000000', // أسود للوضع النهاري
+          'night': '#07ECF7', // سماوي ملكي للوضع الليلي
+          'secondary-day': '#1A1A1A', // رمادي غامق للنهار
+          'secondary-night': '#5FF4FC', // سماوي فاتح للليل
         },
         
-        // Platform name colors
+        // Platform name colors - ألوان اسم المنصة
         'brand': {
-          'name-day': '#0B0B0B', // Black in day mode
-          'name-night': '#9FE3FF', // Light sky-blue in night mode
+          'name-day': '#000000', // أسود في الوضع النهاري
+          'name-night': '#07ECF7', // سماوي ملكي في الوضع الليلي
         },
         
         // Status colors
@@ -47,13 +55,21 @@ export default {
           'info': '#3B82F6', // Blue
         },
         
-        // Legacy colors for backward compatibility
-        'nawi-sky': '#67C7FF',
-        'nawi-sky-light': '#9FE3FF',
-        'nawi-sky-dark': '#0A84FF',
-        'nawi-dark': '#0F1724',
-        'nawi-dark-lighter': '#0E1722',
+        // Legacy colors - محدث بالسماوي الملكي
+        'nawi-sky': '#07ECF7',
+        'nawi-sky-light': '#5FF4FC',
+        'nawi-sky-dark': '#00B8C2',
+        'nawi-dark': '#000000',
+        'nawi-dark-lighter': '#0A0A0A',
         'nawi-white': '#FFFFFF',
+        'nawi-blue': '#07ECF7', // سماوي ملكي
+        'nawi-purple': '#00B8C2', // سماوي غامق
+        'nawi-light-blue': '#5FF4FC', // سماوي فاتح
+        'nawi-light-purple': '#008A92', // سماوي غامق جداً
+        'nawi-cyan': '#07ECF7',
+        'nawi-cyan-light': '#5FF4FC',
+        'nawi-gray': '#111111',
+        'nawi-light': '#E6FDFE',
       },
       
       fontFamily: {
@@ -84,12 +100,12 @@ export default {
       
       keyframes: {
         glow: {
-          from: { textShadow: '0 0 10px #67C7FF, 0 0 20px #67C7FF' },
-          to: { textShadow: '0 0 20px #9FE3FF, 0 0 30px #9FE3FF' }
+          from: { textShadow: '0 0 10px #07ECF7, 0 0 20px #07ECF7' },
+          to: { textShadow: '0 0 20px #5FF4FC, 0 0 30px #5FF4FC' }
         },
         'glow-dark': {
-          from: { textShadow: '0 0 10px #9FE3FF, 0 0 20px #9FE3FF' },
-          to: { textShadow: '0 0 20px #67C7FF, 0 0 30px #67C7FF' }
+          from: { textShadow: '0 0 10px #07ECF7, 0 0 20px #07ECF7' },
+          to: { textShadow: '0 0 20px #00B8C2, 0 0 30px #00B8C2' }
         },
         float: {
           '0%, 100%': { transform: 'translateY(0)' },
@@ -98,11 +114,11 @@ export default {
         'pulse-glow': {
           '0%, 100%': {
             opacity: '1',
-            boxShadow: '0 0 20px rgba(103, 199, 255, 0.5)',
+            boxShadow: '0 0 20px rgba(7, 236, 247, 0.5)',
           },
           '50%': {
             opacity: '.8',
-            boxShadow: '0 0 40px rgba(159, 227, 255, 0.8)',
+            boxShadow: '0 0 40px rgba(95, 244, 252, 0.8)',
           },
         },
         gradient: {
@@ -143,15 +159,15 @@ export default {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'gradient-day': 'linear-gradient(135deg, #67C7FF 0%, #9FE3FF 100%)',
-        'gradient-night': 'linear-gradient(135deg, #0F1724 0%, #1A2332 100%)',
+        'gradient-day': 'linear-gradient(135deg, #07ECF7 0%, #5FF4FC 100%)',
+        'gradient-night': 'linear-gradient(135deg, #000000 0%, #111111 100%)',
       },
       
       boxShadow: {
         'card-day': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',
-        'card-night': '0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.2)',
-        'glow-day': '0 0 20px rgba(103, 199, 255, 0.4)',
-        'glow-night': '0 0 20px rgba(159, 227, 255, 0.3)',
+        'card-night': '0 4px 6px -1px rgba(7, 236, 247, 0.2), 0 2px 4px -1px rgba(7, 236, 247, 0.1)',
+        'glow-day': '0 0 20px rgba(7, 236, 247, 0.4)',
+        'glow-night': '0 0 20px rgba(7, 236, 247, 0.5)',
       },
     },
   },
